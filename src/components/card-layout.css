@@ -1,0 +1,39 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Uneven column width */
+    grid-auto-rows: 10px; 
+    gap: 16px;
+  }
+  
+  .card {
+    grid-column: span 1; 
+    grid-row: span 10;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:nth-child(2n) {
+    grid-column: span 2;
+  }
+  
+  .card:nth-child(3n) {
+    grid-row: span 15;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+    flex-grow: 1;
+  }
+  

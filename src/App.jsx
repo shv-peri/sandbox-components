@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Banner from './components/Banner';
 import Carousel from './components/Carousel';
-
+import ScheduleTickets from './components/schedule';
 
 function App() {
 
@@ -10,6 +10,7 @@ function App() {
     <>
     <Banner />
     <Carousel />
+    <ScheduleTickets/>
     </>
   );
 }
